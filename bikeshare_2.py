@@ -45,7 +45,6 @@ def get_filters():
         if (day.lower() not in list_day_options):
             print("Your entry is outside the options. Please try again:")
 
-
     print('-'*40)
     return city, month, day
 
@@ -110,14 +109,17 @@ def time_stats(df):
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
+    
     #months
     list_index_months = [0,1,2,3,4,5,6,7,8,9,10,11,12]
     list_month_options = ["all", "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
     series_month_options = pd.Series(data=list_month_options, index=list_index_months)
+    
     #days
     list_index_days = [0,1,2,3,4,5,6]
     list_weekdays = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
     series_day_options = pd.Series(data=list_weekdays, index=list_index_days)
+    
     #variables
     df_time=pd.DataFrame
     max_month_pos=0
