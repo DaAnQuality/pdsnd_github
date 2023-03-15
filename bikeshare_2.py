@@ -79,6 +79,7 @@ def load_data(city, month, day):
     list_index_months = [0,1,2,3,4,5,6,7,8,9,10,11,12]
     list_month_options = ["all", "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
     dict_months = dict(zip(list_month_options,list_index_months))
+    
     # Declarations Days
     list_index_days = [0,1,2,3,4,5,6,7]
     list_day_options = ["all", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
